@@ -1,0 +1,55 @@
+  1  mc
+    2  bash autoran.sh
+    3  bash autorun.sh
+    4  sudo reboot
+    5  sudo apt update
+    6  sudo apt ssh ms
+    7  sudo apt install ssh ms
+    8  ip a
+    9  sudo apt install ssh mc
+   10  ip a
+   11  sudo apt install gcc perl make
+   12  mc
+   13  sudo apt dist-upgrade
+   14  mc
+   15  ssh qwerty@192.168.0.19
+   16  touch file1
+   17  echo Hello, world!
+   18  echo Hello, world! > file1
+   19  touch file2
+   20  echo Hello, people!
+   21  echo Hello, world! > file2
+   22  cat file1 file2 > myfile
+   23  cat myfile
+   24  mv myfile myworld
+   25  cat myworld
+   26  touch kittens{1..7}
+   27  ls -l
+   28  mv kittens{1..7} home
+   29  mkdir home
+   30  mv kittens{1..7} home
+   31  ls home
+   32  rm -rf ./*
+   33  touch file1
+   34  echo Hello, world! > file1
+   35  cat file1
+   36  cp file1 file2
+   37  ln -s file1 fie3
+   38  ls -lia
+   39  ln file1 file4
+   40  ls -lia
+   41  rm ./file1
+   42  ls file2
+   43  ls -lia
+   44  ls file3
+   45  mv file2 lol
+   46  mv file4 lol123
+   47  ls -lia
+   48  ln -s lol softlol
+   49  ln -s lol123 supersoftlol
+   50  ls -lia
+   51  mkdir home
+   52  mv softlol home
+   53  mv supersoftlol home
+   54  ls -lia
+   55  history
