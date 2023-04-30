@@ -1,0 +1,62 @@
+1. Создать два произвольных файла. Первому присвоить права на чтение и запись для владельца и группы, только на чтение — для всех. 
+Второму присвоить права на чтение и запись только для владельца. Сделать это в численном и символьном виде.
+Назначить новых владельца и группу для директории целиком.
+
+   1  mkdir HomeWork_3
+   2  touch HomeWork_3/file{1..2}
+   3  cd HomeWork_3
+   4  chmod ug=rw file1
+   5  chmod o=r file1
+   6  chmod go-rw file2
+   7  ls -la
+   8  touch file{3..4}
+   9  chmod 664 file3
+   10  chmod 600 file4
+   11  ls -la
+   12  cd ..
+   13  chown qwerty:qwerty HomeWork_3
+
+2.Управление пользователями:
+* создать пользователя, используя утилиту useradd и adduser;
+* удалить пользователя, используя утилиту userdel.
+Управление группами:
+* создать группу с использованием утилит groupadd и addgroup;
+* попрактиковаться в смене групп у пользователей;
+* добавить пользователя в группу, не меняя основной;
+Создать пользователя с правами суперпользователя. Сделать так, чтобы sudo не требовал пароль для выполнения команд.
+
+   14  sudo useradd gb1
+   15  sudo adduser gb2
+   16  cat /etc/passwd
+   17  sudo userdel gb1
+   18  cat /etc/passwd
+   19  sudo groupadd developers
+   20  sudo addgroup QA (<- ругается на абравиатуру из заглавных букв, использовать только прописные, не использовать системные имена, _ в помощь)
+   21  sudo addgroup q_a
+   22  id
+   23  id gb2
+   24  tail -n 5 /etc/group
+   25  sudo usermod -g 1003 gb2
+   26  id gb2
+   27  sudo usermod -g 1002 gb2
+   28  id gb2
+   29  sudo usermod -aG 1003 gb2
+   30  id gb2
+   31  sudo usermod -aG q_a gb2
+   32  id gb2
+   33  sudo groupdel qa
+   34  tail -n 5 /etc/group
+   35  apt -whereis apt
+   36  whereis apt
+   37  sudo visudo
+   38  whereis apt
+   39  whereis cat
+   40  fg %1
+   41  sudo apt update
+   42  sudo visudo
+   43  whereis cat
+   44  fg %1
+   45  sudo apt update
+   46  sudo -l
+   47  history
+
