@@ -1,0 +1,20 @@
+#!/bin/bash
+
+directory=$1
+
+if [ -d $directory ]
+
+then
+        echo "Начинаю искать файлы"
+        for term in "\.bak" "\.tmp" "\.backup"
+        do
+                files_to_remove=$(ls $directory | grep $term)
+                for file in $files_to_remove
+                do
+                        rm $directory/$file
+                done
+        done
+else
+        echo "Папки не существует"
+        exit 2
+fi
